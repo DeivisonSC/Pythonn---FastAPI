@@ -1,6 +1,5 @@
 ## 2. README: Python + FastAPI + SQLAlchemy
 
-```markdown
 # API de Usuários - FastAPI & SQLAlchemy (Manual Transactions)
 
 Implementação de API de alta performance utilizando **Python** e **FastAPI**, focando no gerenciamento manual de sessões e transações de banco de dados com **SQLAlchemy**.
