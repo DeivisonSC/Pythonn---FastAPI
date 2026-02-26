@@ -4,13 +4,13 @@
 
 Implementação de API de alta performance utilizando **Python** e **FastAPI**, focando no gerenciamento manual de sessões e transações de banco de dados com **SQLAlchemy**.
 
-## 🚀 Tecnologias
+## Tecnologias
 * Python 3.x
 * FastAPI
 * SQLAlchemy (ORM)
 * Pydantic (Validação de dados)
 
-## 🛠️ Lógica de Transação
+##  Lógica de Transação
 Diferente de outros ORMs, aqui a transação é gerenciada explicitamente. O `Perfil` é criado primeiro para gerar o ID necessário para a chave estrangeira do `Usuario`, ambos dentro do mesmo contexto de sessão:
 
 ```python
