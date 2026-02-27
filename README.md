@@ -1,6 +1,6 @@
 ## README: Python + FastAPI + SQLAlchemy
 
-# API de Usuários - FastAPI & SQLAlchemy (Manual Transactions)
+# API de Usuários - FastAPI & SQLAlchemy
 
 Implementação de API de alta performance utilizando **Python** e **FastAPI**, focando no gerenciamento manual de sessões e transações de banco de dados com **SQLAlchemy**.
 
@@ -21,3 +21,10 @@ db.flush() # Gera o ID do perfil antes do commit final
 novo_usuario = models.Usuario(..., id_perfil=novo_perfil.id)
 db.add(novo_usuario)
 db.commit()
+```
+Como Executar:
+1. Crie o ambiente virtual: `python -m venv venv`
+
+2. Ative o venv e instale: `pip install fastapi uvicorn sqlalchemy`
+
+3. Inicie o servidor: `uvicorn main:app --reload`
